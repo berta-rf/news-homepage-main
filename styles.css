@@ -1,55 +1,79 @@
 * {
     font-family: "Inter";
+    
 }
 
+body {
+
+    margin: 5% 8%;
+    background: hsl(36, 100%, 99%);
+}
+
+p {
+    font-size: 15px;
+    color: hsl(233, 8%, 79%);
+
+}
 
 .wrapper{
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 1440px;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    "hero            hero           asidenew"
+    "hero          hero       asidenew"
     "maintitle   centercontent      asidenew"
-    "topenews1      topnews2        topnews3"
+    "topnews1      topnews2         topnews3"
     ;
 }
 
-h1 {
+header {
 
-    grid-area: maintitle;
-
-}
-
-h2 {
-
-}
-
-h3 {
-
-}
-
-h4 {
-
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 
+nav ul {
 
-.logo {
+    display: flex;
+    
+}
 
+
+.navbar a {
+
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    padding: 1em;
 
 }
 
+#logo {
+
+    align-items: left;
+
+}
+
+
+#main-title {
+
+    grid-area: maintitle;   
+
+}
 
 .hero {
 
     grid-area: hero;
-
+   
 }
 
 #centercontent {
 
     grid-area: centercontent;
+    padding: 20px;
 }
 
 #readmore {
@@ -65,49 +89,89 @@ h4 {
 
 #newtitle {
 
-    color: hsl(35, 77%, 62%)
+    color: hsl(35, 77%, 62%);
+    font-size: 2.5rem;
+    
 }
 
 .asidenew {
 
     grid-area: asidenew;
+    padding: 20px;
+    margin: 20px;
     background: hsl(240, 100%, 5%);
     color: white;
 
 }
 
+p[class~="asidenew"]  {
+
+    border-bottom:  2px solid hsl(233, 8%, 79%);
+    
+}
+
+
+/* FOOTER */
+
+footer img {
+
+    height: 100px;
+}
+
 .topnews {
 
+    display: flex;
 
+}
+
+.topnews h3 {
+
+    color: hsl(233, 8%, 79%);
+    font-family: "Inter-Bold";
+    font-size: 25px;
 }
 
 #topnews1 {
 
+    display: flex;
     grid-area: topnews1;
+
 }
 
 #topnews2 {
 
+    display: flex;
     grid-area: topnews2;
+    
 }
 
 #topnews3 {
 
+    display: flex;
     grid-area: topnews3;
 }
-
-
-
-
-
 
 .attribution {
     
     font-size: 11px; text-align: center;
 }
 
-
 .attribution a {
     
     color: hsl(228, 45%, 44%);
+}
+
+
+@media screen (max-width 375px) {
+
+    .hero {
+        background: url(./assets/images/)
+    }
+
+    .wrapper {
+
+        grid-template-columns: 1fr;
+        grid-template-areas: ;
+    }
+    
 }
