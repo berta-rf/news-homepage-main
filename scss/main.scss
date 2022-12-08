@@ -35,25 +35,31 @@ $vdarkblue: map.get($theme-colors, "vdarkblue");
 
 * {
     font-family: "Inter";
-    
+
 }
+
+
 
 p {
     font-size: 15px;
 }
 
 
+body {
 
+    margin: 10%;
+    background: $offwhite;
 
-// body {
-
-//     margin: 10% 10%;
-//     background: hsl(36, 100%, 99%);
-//     height: 100vh;
-//     width: 1440px;
     
-// }
+}
 
+.card {
+
+    border: 0;
+    background: $offwhite;
+
+
+}
 // p {
 //     font-size: 15px;
 //     color: hsl(236, 13%, 42%);
@@ -165,9 +171,6 @@ p {
 // }
 
 
-
-/* FOOTER */
-
 // footer {
 
 //     display: flex;
@@ -213,26 +216,10 @@ p {
 
 .attribution {
     
-    font-size: 11px; text-align: center;
+    font-size: 14px; text-align: center;
 }
 
 .attribution a {
     
     color: hsl(228, 45%, 44%);
-} */
-
-
-/* @media screen (min-width px) { 
-
-    .hero {
-        background: url(./assets/images/)
-    }
-
-    .wrapper {
-
-        grid-template-columns: 1fr;
-        grid-template-areas: ;
-    }
-    
 }
-*/

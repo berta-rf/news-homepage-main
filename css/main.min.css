@@ -11455,4 +11455,23 @@ textarea.form-control-lg {
 
 p {
   font-size: 15px;
+}
+
+body {
+  margin: 10%;
+  background: hsl(36deg, 100%, 99%);
+}
+
+.card {
+  border: 0;
+  background: hsl(36deg, 100%, 99%);
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
 }/*# sourceMappingURL=main.min.css.map */
