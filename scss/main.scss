@@ -1,0 +1,238 @@
+//import the functions & variables
+@use "sass:map";
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors: (
+    "softorange":hsl(35, 77%, 62%),
+    "softred": hsl(5, 85%, 63%),
+    "offwhite": hsl(36, 100%, 99%),
+    "grayblue": hsl(233, 8%, 79%),
+    "darkgreyblue": hsl(236, 13%, 42%),
+    "vdarkblue":hsl(240, 100%, 5%),
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+//import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+// custom-theme-colors
+
+// primary
+$softorange: map.get($theme-colors, "softorange");
+$softred: map.get($theme-colors, "softred");
+// neutral
+$offwhite: map.get($theme-colors, "offwhite");
+$grayblue: map.get($theme-colors, "grayblue");
+$darkgreyblue: map.get($theme-colors, "darkgreyblue");
+$vdarkblue: map.get($theme-colors, "vdarkblue");      
+
+
+// start of my css
+
+
+* {
+    font-family: "Inter";
+    
+}
+
+p {
+    font-size: 15px;
+}
+
+
+
+
+// body {
+
+//     margin: 10% 10%;
+//     background: hsl(36, 100%, 99%);
+//     height: 100vh;
+//     width: 1440px;
+    
+// }
+
+// p {
+//     font-size: 15px;
+//     color: hsl(236, 13%, 42%);
+//     line-height: 30px;
+
+// }
+
+// .wrapper{
+
+//     display: grid;
+//     grid-gap: 30px;
+//     grid-template-columns:repeat(3, minmax(240px, 500px));
+//     grid-template-areas:
+//     "header          header            header"
+//     "hero            hero              asidenew"
+//     "maintitle       centercontent     asidenew"
+//     "topnews1        topnews2          topnews3";
+// }
+
+// header {
+
+//     display: flex;
+//     width: 100%;
+//     justify-content: space-between;
+//     grid-area: header;
+// }
+
+
+// nav ul {
+
+//     display: flex;
+    
+// }
+
+
+// .navbar a {
+
+//     text-decoration: none;
+//     color: hsl(236, 13%, 42%);
+//     padding: 1em;
+
+// }
+
+// #logo {
+
+//     align-items: left;
+
+// }
+
+
+// .main-title {
+
+//     grid-area: maintitle;
+
+// }
+
+// .main-title h1 {
+
+//     font-size: 60px;
+//     font-family: "Inter-Bold";
+
+// }
+
+
+// .hero {
+
+//     grid-area: hero;
+   
+// }
+
+// .hero > img {
+//     object-fit: cover;
+//     width: 100%;
+//     max-height: 100%;
+
+// }
+
+// #centercontent {
+
+//     grid-area: centercontent;
+//     padding: 20px;
+// }
+
+// #readmore {
+
+//     background: hsl(5, 85%, 63%);
+//     font-family: "Inter-Bold";
+//     text-decoration: none;
+//     color: white;
+//     border: 0;
+//     padding: 15px 35px;
+
+// }
+
+// #newtitle {
+
+//     color: hsl(35, 77%, 62%);
+//     font-size: 2.5rem;
+    
+// }
+
+// .asidenew {
+
+//     grid-area: asidenew;
+//     padding: 2px 25px;
+//     background: hsl(240, 100%, 5%);
+//     color: white;
+
+// }
+
+
+
+/* FOOTER */
+
+// footer {
+
+//     display: flex;
+//     justify-content: space-around;
+//     width: 1440px;
+// }
+
+// footer img {
+
+//     height: 130px;
+//     padding-right: 30px;
+
+// }
+
+
+// footer h3 {
+
+//     color: hsl(233, 8%, 79%);
+//     font-family: "Inter-Bold";
+//     font-size: 25px;
+// }
+
+
+// .topnews1 {
+
+//     grid-area: topnews1;
+//     display: flex;
+
+// }
+
+// .topnews2 {
+
+//     grid-area: topnews2;
+//     display: flex;
+    
+// }
+
+// .topnews3 {
+
+//     grid-area: topnews3;
+//     display: flex;
+// }
+
+.attribution {
+    
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    
+    color: hsl(228, 45%, 44%);
+} */
+
+
+/* @media screen (min-width px) { 
+
+    .hero {
+        background: url(./assets/images/)
+    }
+
+    .wrapper {
+
+        grid-template-columns: 1fr;
+        grid-template-areas: ;
+    }
+    
+}
+*/
