@@ -39,84 +39,44 @@ $vdarkblue: map.get($theme-colors, "vdarkblue");
 }
 
 
+body {
+    background: $offwhite;
+    margin: 5%;
+ 
+}
+
+h1{
+    font-size: 40px;
+    font-family: "Inter-Bold";
+}
+
+h2 {
+
+    color: hsl(35, 77%, 62%);
+    font-size: 2.5rem;
+    
+}
 
 p {
     font-size: 15px;
+    color: hsl(236, 13%, 42%);
+    line-height: 30px;
 }
 
+aside {
+    background-color: $vdarkblue;
 
-body {
-
-    margin: 10%;
-    background: $offwhite;
-
-    
 }
 
+article h3 {
+    color: $offwhite;
+
+}
 .card {
-
     border: 0;
     background: $offwhite;
 
-
 }
-// p {
-//     font-size: 15px;
-//     color: hsl(236, 13%, 42%);
-//     line-height: 30px;
-
-// }
-
-// .wrapper{
-
-//     display: grid;
-//     grid-gap: 30px;
-//     grid-template-columns:repeat(3, minmax(240px, 500px));
-//     grid-template-areas:
-//     "header          header            header"
-//     "hero            hero              asidenew"
-//     "maintitle       centercontent     asidenew"
-//     "topnews1        topnews2          topnews3";
-// }
-
-// header {
-
-//     display: flex;
-//     width: 100%;
-//     justify-content: space-between;
-//     grid-area: header;
-// }
-
-
-// nav ul {
-
-//     display: flex;
-    
-// }
-
-
-// .navbar a {
-
-//     text-decoration: none;
-//     color: hsl(236, 13%, 42%);
-//     padding: 1em;
-
-// }
-
-// #logo {
-
-//     align-items: left;
-
-// }
-
-
-// .main-title {
-
-//     grid-area: maintitle;
-
-// }
-
-// .main-title h1 {
 
 //     font-size: 60px;
 //     font-family: "Inter-Bold";
@@ -154,12 +114,6 @@ body {
 
 // }
 
-// #newtitle {
-
-//     color: hsl(35, 77%, 62%);
-//     font-size: 2.5rem;
-    
-// }
 
 // .asidenew {
 
@@ -223,3 +177,5 @@ body {
     
     color: hsl(228, 45%, 44%);
 }
+
+

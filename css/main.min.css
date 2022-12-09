@@ -11453,13 +11453,33 @@ textarea.form-control-lg {
   font-family: "Inter";
 }
 
-p {
-  font-size: 15px;
+body {
+  background: hsl(36deg, 100%, 99%);
+  margin: 5%;
 }
 
-body {
-  margin: 10%;
-  background: hsl(36deg, 100%, 99%);
+h1, .h1 {
+  font-size: 40px;
+  font-family: "Inter-Bold";
+}
+
+h2, .h2 {
+  color: hsl(35deg, 77%, 62%);
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 15px;
+  color: hsl(236deg, 13%, 42%);
+  line-height: 30px;
+}
+
+aside {
+  background-color: hsl(240deg, 100%, 5%);
+}
+
+article h3, article .h3 {
+  color: hsl(36deg, 100%, 99%);
 }
 
 .card {
