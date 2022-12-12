@@ -13,180 +13,149 @@
 
 <body>
   
-  <nav class="navbar navbar-expand-md mb-5">
+  <nav class="navbar navbar-expand-md mb-4">
     <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/images/logo.svg" alt="brand logo" width="50" height="auto">
-        </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand" href="#">
+        <img src="./assets/images/logo.svg" alt="brand logo" width="50" height="auto">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <img src="./assets/images/icon-menu.svg">
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header justify-content-end">
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close">
+            <img src="./assets/images/icon-menu-close.svg">
+          </button>
         </div>
         <div class="offcanvas-body">
-
-              <ul class="navbar-nav justify-content-end  flex-grow-1">
-                <li class="nav-item">
-                  <a class="nav-link mx-3" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-3" href="#">New</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-3" href="#">Popular</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-3" href="#">Trending</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link ms-3" href="#">Categories</a>
-                </li>
-              </ul>
-           
+          
+          <ul class="navbar-nav justify-content-end  flex-grow-1">
+            <li class="nav-item">
+              <a class="nav-link mx-3" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="#new">New</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="#">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="#trending">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ms-3" href="#">Categories</a>
+            </li>
+          </ul>
+          
         </div>
-    </div>
+      </div>
   </nav>
-
-  <!-- side panel / offcanvas
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In minima ducimus excepturi quasi tempore fugit quis voluptatibus aut error possimus, tenetur natus magni quam voluptatem quae eligendi repudiandae delectus eaque!</p>
-  dropdown 
-        <div class="dropdown mt-3">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="menu-dropdown" data-bs-toggle="dropdown">
-                Choose a book title
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="menu-dropdown">
-                <li><a class="dropdown-item" href="#">Become a React Superhero</a></li>
-                <li><a class="dropdown-item" href="#">Conquering Vue.js</a></li>
-                <li><a class="dropdown-item" href="#">Levelling up Your Next.js</a></li>
-            </ul>
-        </div>   
-    </div>
-</div> -->
-
-
+    
   <main>
     <section class="container">
       <div class="row">
-
-          <div class="col-12 col-lg-8 d-md-none">
+        <div class="col-lg-8">
+          <div class="d-lg-none my-4">
             <img src="./assets/images/image-web-3-mobile.jpg" class=" img-fluid" alt="...">
           </div>
-          <div class="col-12 col-lg-8 d-none d-md-block">
+          <div class="d-none d-lg-block">
             <img src="./assets/images/image-web-3-desktop.jpg" class="img-fluid" alt="...">
           </div>
-
-          <aside class="aside col-12 col-lg-4">
+          <div class="row">
+            <div class="col-md-6">
+              <h1 class="main-title">The Bright Future of Web 3.0?</h1>
+            </div>
+            <div class="col-md-6">
+              <article class="center-text">
+                <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                  But is it really fulfilling its promise?</p>
+                <button type="button" href="#" class="btn btn-lg">READ MORE</button>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <aside class="py-5 px-4" id="new">
             <h2>New</h2>
-            <article>
+            <article class="mt-4">
               <h3>Hydrogen VS Electric Cars</h3>
               <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
             </article>
-            
+            <br>
             <article>
               <h3>The Downsides of AI Artistry</h3>
               <p>What are the possible adverse effects of on-demand AI image generation?</p>
             </article>
-            
+            <br>
             <article>
               <h3> Is VC Funding Drying Up?</h3>
               <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
             </article>
           </aside>
+        </div>
+      </div>
+    </section>
 
+    <section class="container my-4" id="trending">
       <div class="row">
         
-          <div class="col-12 col-lg-4">
-            <h1 class="main-title">The Bright Future of Web 3.0?</h1>
-          </div>
-
-          <article class="col-12 col-lg-4 center-text">
-            
-            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-              But is it really fulfilling its promise?</p>
-              
-              <button type="button" class="btn btn-lg">READ MORE</button>
-          </article>
-          
-      </div>  
-          
-        </div>
-      </div>
-
-        <div class="row">
-            
-          </div>
-            
-      </section>  
-      
-
-          <section class="container">
-            <div class="row">
-
-              <div class="card-group">
-                <div class="card mb-3" style="max-width: 540px;">
-                  <div class="row g-0">
-                    <div class="col col-lg-4">
-                      <img src="./assets/images/image-retro-pcs.jpg" class="img-fluid" alt="vintage PC">
-                    </div>
-                    <div class="col">
-                      <div class="card-body">
-                        <h4 class="card-title">01</h4>
-                        <h5 class="subtitle">Reviving Retro PCs</h5>
-                        <p class="card-text">What happens when old PCs are given modern upgrades?</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card mb-3" style="max-width: 540px;">
-                  <div class="row g-0">
-                    <div class="col col-lg-4">
-                      <img src="./assets/images/image-top-laptops.jpg" class="img-fluid" alt="laptop keyboard">
-                    </div>
-                    <div class="col">
-                      <div class="card-body">
-                        <h4 class="card-title">02</h4>
-                        <h5 class="subtitle">Top 10 Laptops of 2022</h5>
-                        <p class="card-text">Our best picks for various needs and budgets.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card mb-3" style="max-width: 540px;">
-                  <div class="row g-0">
-                    <div class="col col-lg-4">
-                      <img src="./assets/images/image-gaming-growth.jpg" class="img-fluid" alt="PS4 controller">
-                    </div>
-                    <div class="col">
-                      <div class="card-body">
-                        <h4 class="card-title">03</h4>
-                        <h5 class="subtitle">The Growth of Gaming</h5>
-                        <p class="card-text">How the pandemic has sparked fresh opportunities.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div> 
+        <div class="card-group">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col col-lg-4">
+                <img src="./assets/images/image-retro-pcs.jpg" class="img-fluid" alt="vintage PC">
               </div>
-              
+              <div class="col">
+                <div class="card-body">
+                  <h4 class="card-title">01</h4>
+                  <h5 class="subtitle">Reviving Retro PCs</h5>
+                  <p class="card-text">What happens when old PCs are given modern upgrades?</p>
+                </div>
+              </div>
             </div>
-          </section>
-          
+          </div>
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col col-lg-4">
+                <img src="./assets/images/image-top-laptops.jpg" class="img-fluid" alt="laptop keyboard">
+              </div>
+              <div class="col">
+                <div class="card-body">
+                  <h4 class="card-title">02</h4>
+                  <h5 class="subtitle">Top 10 Laptops of 2022</h5>
+                  <p class="card-text">Our best picks for various needs and budgets.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col col-lg-4">
+                <img src="./assets/images/image-gaming-growth.jpg" class="img-fluid" alt="PS4 controller">
+              </div>
+              <div class="col">
+                <div class="card-body">
+                  <h4 class="card-title">03</h4>
+                  <h5 class="subtitle">The Growth of Gaming</h5>
+                  <p class="card-text">How the pandemic has sparked fresh opportunities.</p>
+                </div>
+              </div>
+            </div>
+          </div> 
         </div>
+        
       </div>
-    </main>
-  
-  <footer class="attribution mt-5">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by Berta Romano Fernandez.
-  </footer>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
-</html>
+    </section>
+    
+    
+    
+  </main>
+    
+    <footer class="attribution mt-5">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by Berta Romano Fernandez.
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+  </html>
