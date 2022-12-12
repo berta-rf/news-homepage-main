@@ -35,7 +35,6 @@ $vdarkblue: map.get($theme-colors, "vdarkblue");
 
 * {
     font-family: "Inter";
-
 }
 
 
@@ -44,9 +43,14 @@ body {
     margin: 5%;
 }
 
+.nav-link:hover {
+    color: $softred;
+}
+
 h1 {
     font-size: 55px;
     font-family: "Inter-Bold";
+    color: $vdarkblue;
 }
 
 h2 {
@@ -66,6 +70,10 @@ p {
     color: $darkgreyblue;
 }
 
+a {
+    text-decoration: none;
+}
+
 .btn {
     background: $softred;
     font-weight: bold;
@@ -75,12 +83,21 @@ p {
     padding: 10px 40px;
 }
 
+.btn:hover {
+    background-color: $vdarkblue;
+    color: $offwhite;
+}
+
 aside {
     background-color: $vdarkblue;
 }
 
 aside h3 {
     color: $offwhite;
+}
+
+aside h3:hover {
+    color: $softorange;
 }
 
 aside p {
@@ -106,6 +123,11 @@ aside p {
 
 .card-body h5 {
     font-weight: bold;
+    color: $vdarkblue;
+}
+
+.subtitle:hover {
+    color: $softred;
 }
 
 .attribution {

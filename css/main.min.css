@@ -11458,9 +11458,14 @@ body {
   margin: 5%;
 }
 
+.nav-link:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+
 h1, .h1 {
   font-size: 55px;
   font-family: "Inter-Bold";
+  color: hsl(240deg, 100%, 5%);
 }
 
 h2, .h2 {
@@ -11480,6 +11485,10 @@ p {
   color: hsl(236deg, 13%, 42%);
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn {
   background: hsl(5deg, 85%, 63%);
   font-weight: bold;
@@ -11489,12 +11498,21 @@ p {
   padding: 10px 40px;
 }
 
+.btn:hover {
+  background-color: hsl(240deg, 100%, 5%);
+  color: hsl(36deg, 100%, 99%);
+}
+
 aside {
   background-color: hsl(240deg, 100%, 5%);
 }
 
 aside h3, aside .h3 {
   color: hsl(36deg, 100%, 99%);
+}
+
+aside h3:hover, aside .h3:hover {
+  color: hsl(35deg, 77%, 62%);
 }
 
 aside p {
@@ -11520,6 +11538,11 @@ aside p {
 
 .card-body h5, .card-body .h5 {
   font-weight: bold;
+  color: hsl(240deg, 100%, 5%);
+}
+
+.subtitle:hover {
+  color: hsl(5deg, 85%, 63%);
 }
 
 .attribution {
