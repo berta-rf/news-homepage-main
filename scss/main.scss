@@ -42,139 +42,77 @@ $vdarkblue: map.get($theme-colors, "vdarkblue");
 body {
     background: $offwhite;
     margin: 5%;
- 
 }
 
-h1{
-    font-size: 40px;
+h1 {
+    font-size: 55px;
     font-family: "Inter-Bold";
 }
 
 h2 {
-
     color: hsl(35, 77%, 62%);
     font-size: 2.5rem;
-    
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 p {
     font-size: 15px;
-    color: hsl(236, 13%, 42%);
-    line-height: 30px;
+    line-height: 2rem;
+    color: $darkgreyblue;
+}
+
+.btn {
+    background: $softred;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    border-radius: 0;
+    padding: 10px 40px;
 }
 
 aside {
     background-color: $vdarkblue;
-
 }
 
-article h3 {
+aside h3 {
     color: $offwhite;
-
 }
+
+aside p {
+    color: $grayblue;
+    font-size: 1.2rem;
+}
+
+.breaker {
+    border-bottom: 0.5px solid $grayblue;
+    margin: 2em 0;
+}
+
 .card {
     border: 0;
     background: $offwhite;
-
 }
 
-//     font-size: 60px;
-//     font-family: "Inter-Bold";
+.card-body h4 {
+    font-weight: bold;
+    color: $grayblue;
+    font-size: 30px;
+}
 
-// }
-
-
-// .hero {
-
-//     grid-area: hero;
-   
-// }
-
-// .hero > img {
-//     object-fit: cover;
-//     width: 100%;
-//     max-height: 100%;
-
-// }
-
-// #centercontent {
-
-//     grid-area: centercontent;
-//     padding: 20px;
-// }
-
-// #readmore {
-
-//     background: hsl(5, 85%, 63%);
-//     font-family: "Inter-Bold";
-//     text-decoration: none;
-//     color: white;
-//     border: 0;
-//     padding: 15px 35px;
-
-// }
-
-
-// .asidenew {
-
-//     grid-area: asidenew;
-//     padding: 2px 25px;
-//     background: hsl(240, 100%, 5%);
-//     color: white;
-
-// }
-
-
-// footer {
-
-//     display: flex;
-//     justify-content: space-around;
-//     width: 1440px;
-// }
-
-// footer img {
-
-//     height: 130px;
-//     padding-right: 30px;
-
-// }
-
-
-// footer h3 {
-
-//     color: hsl(233, 8%, 79%);
-//     font-family: "Inter-Bold";
-//     font-size: 25px;
-// }
-
-
-// .topnews1 {
-
-//     grid-area: topnews1;
-//     display: flex;
-
-// }
-
-// .topnews2 {
-
-//     grid-area: topnews2;
-//     display: flex;
-    
-// }
-
-// .topnews3 {
-
-//     grid-area: topnews3;
-//     display: flex;
-// }
+.card-body h5 {
+    font-weight: bold;
+}
 
 .attribution {
-    
-    font-size: 14px; text-align: center;
+    text-align: center;
 }
 
 .attribution a {
-    
     color: hsl(228, 45%, 44%);
 }
 

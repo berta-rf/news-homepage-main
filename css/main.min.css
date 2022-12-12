@@ -11459,27 +11459,52 @@ body {
 }
 
 h1, .h1 {
-  font-size: 40px;
+  font-size: 55px;
   font-family: "Inter-Bold";
 }
 
 h2, .h2 {
   color: hsl(35deg, 77%, 62%);
   font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h3, .h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 p {
   font-size: 15px;
+  line-height: 2rem;
   color: hsl(236deg, 13%, 42%);
-  line-height: 30px;
+}
+
+.btn {
+  background: hsl(5deg, 85%, 63%);
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  border-radius: 0;
+  padding: 10px 40px;
 }
 
 aside {
   background-color: hsl(240deg, 100%, 5%);
 }
 
-article h3, article .h3 {
+aside h3, aside .h3 {
   color: hsl(36deg, 100%, 99%);
+}
+
+aside p {
+  color: hsl(233deg, 8%, 79%);
+  font-size: 1.2rem;
+}
+
+.breaker {
+  border-bottom: 0.5px solid hsl(233deg, 8%, 79%);
+  margin: 2em 0;
 }
 
 .card {
@@ -11487,8 +11512,17 @@ article h3, article .h3 {
   background: hsl(36deg, 100%, 99%);
 }
 
+.card-body h4, .card-body .h4 {
+  font-weight: bold;
+  color: hsl(233deg, 8%, 79%);
+  font-size: 30px;
+}
+
+.card-body h5, .card-body .h5 {
+  font-weight: bold;
+}
+
 .attribution {
-  font-size: 14px;
   text-align: center;
 }
 
