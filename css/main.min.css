@@ -11464,23 +11464,23 @@ body {
 
 h1, .h1 {
   font-size: 55px;
-  font-family: "Inter-Bold";
+  font-weight: 800;
   color: hsl(240deg, 100%, 5%);
 }
 
 h2, .h2 {
   color: hsl(35deg, 77%, 62%);
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 h3, .h3 {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 2rem;
   color: hsl(236deg, 13%, 42%);
 }
@@ -11489,16 +11489,16 @@ a {
   text-decoration: none;
 }
 
-.btn {
+article .btn {
   background: hsl(5deg, 85%, 63%);
-  font-weight: bold;
-  font-size: 15px;
+  font-weight: 700;
+  font-size: 14px;
   color: white;
   border-radius: 0;
-  padding: 10px 40px;
+  padding: 10px 50px;
 }
 
-.btn:hover {
+article .btn:hover {
   background-color: hsl(240deg, 100%, 5%);
   color: hsl(36deg, 100%, 99%);
 }
@@ -11530,6 +11530,11 @@ aside p {
   background: hsl(36deg, 100%, 99%);
 }
 
+.card-body {
+  justify-content: space-between;
+  padding: 0 1em;
+}
+
 .card-body h4, .card-body .h4 {
   font-weight: bold;
   color: hsl(233deg, 8%, 79%);
@@ -11551,4 +11556,11 @@ aside p {
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  article.center-text {
+    padding-left: 2rem !important;
+    padding-top: 3rem !important;
+  }
 }/*# sourceMappingURL=main.min.css.map */
